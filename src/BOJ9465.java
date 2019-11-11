@@ -20,6 +20,7 @@ public class BOJ9465 {
                     sticker[i][j] = Integer.parseInt(st.nextToken());
                 }
             }
+
             dp[0][0] = dp[1][0] = 0;
             dp[0][1] = sticker[0][1];
             dp[1][1] = sticker[1][1];
