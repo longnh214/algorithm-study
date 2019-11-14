@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BufferReaderTest {
+public class BufferedReaderTest {
     //BufferReader는 Exception 처리를 따로 해주어야하기 때문에 throws를 해주어야 한다.
     //정석 : try ~ catch로 예외 처리를 해주어야 합니다.
     public static void main(String[] args) throws Exception{
