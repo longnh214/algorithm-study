@@ -1,14 +1,18 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;;
+import java.util.StringTokenizer;
 
-//팰린드롬 연습문제
+//팰린드롬 연습문제(시간 초과) !?!?!?
 public class BOJ10942 {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();//문제 배열의 크기
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());//문제 배열의 크기
         int [] question = new int[n+1];
         int [][] palindrome = new int[n+1][n+1];
+        StringTokenizer st = new StringTokenizer(br.readLine());
         for(int i=1;i<=n;i++){
-            question[i] = scan.nextInt();
+            question[i] = Integer.parseInt(st.nextToken());
         }
 
         for(int i=1;i<=n;i++){//혼자 있는 수는 무조건 팰린드롬 성립
@@ -27,11 +31,12 @@ public class BOJ10942 {
             }
         }
 
-        int T = scan.nextInt();
+        int T = Integer.parseInt(br.readLine());
         while(T-->0){
-            //앞 scan(s), 뒷 scan(t)
-            System.out.println(palindrome[scan.nextInt()][scan.nextInt()]);
+            st = new StringTokenizer(br.readLine());
+            int s = Integer.parseInt(st.nextToken());
+            int t = Integer.parseInt(st.nextToken());
+            System.out.println(palindrome[s][t]);
         }
-        scan.close();
     }
 }
