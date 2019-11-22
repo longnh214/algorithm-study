@@ -7,7 +7,7 @@ public class BOJ2602 {
     static char [] rings;
     static char [] devil;
     static char [] angel;
-    static int [][][] dp = new int[100][20][2];//[지금 밟은 곳], [다음 밟을 곳], [악마의 돌다리인지, 천사의 돌다리인지]
+    static int [][][] dp = new int[100][20][2];//[지금 밟은 곳], [밟아야 할 곳], [악마의 돌다리인지, 천사의 돌다리인지]
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

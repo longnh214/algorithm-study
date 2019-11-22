@@ -3,13 +3,12 @@ import java.util.Scanner;
 //https://brenden.tistory.com/28 참고
 
 public class BOJ1509 {
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine().trim();
         int n = str.length();
-        str = " " + str;
-        //check[i][j]은 i 번째부터 j 번째까지 팰린드롬인지 확인하는 참거짓형 2차원 배열
+        str = " " + str;//1번째 인덱스부터 배열을 채우기 위한 공백 추가
+        //check[i][j]은 i 번째부터 j 번째까지 팰린드롬인지 확인하는 참 거짓형 2차원 배열
         boolean [][] check = new boolean[n+1][n+1];
 
         for(int i=1;i<=n;i++)
@@ -19,7 +18,7 @@ public class BOJ1509 {
             if(str.charAt(i) == str.charAt(i+1))
                 check[i][i+1] = true;
 
-        for(int i=2;i<=n;i++){
+        for(int i=2;i<=n;i++){//3자리 이상
             for(int j=1;i+j<=n;j++){
                 if(str.charAt(j) == str.charAt(i+j) && check[j+1][i+j-1])
                     check[j][i+j] = true;
@@ -33,7 +32,7 @@ public class BOJ1509 {
             dp[i] = -1;
             for(int j=1;j<=i;j++){
                if(check[j][i])
-                   if(dp[i] == -1 || dp[i] > dp[j-1] + 1)
+                   if(dp[i] == -1 || dp[i] > dp[j-1] + 1)//dp 값이 초기화가 되지 않았거나 dp[j-1] + 1이 기존 dp 값보다 작다면.
                         dp[i] = dp[j-1] + 1;
             }
         }
