@@ -38,6 +38,7 @@ public class BOJ2251 {
 
         while(!q.isEmpty()){
             Status temp = q.poll();
+            //체크한 적이 있는 물의 양인지 판별(이미 체크된 부분이면 continue)
             if(checked[temp.a][temp.b])
                 continue;
             checked[temp.a][temp.b] = true;
