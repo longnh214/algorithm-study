@@ -9,7 +9,7 @@ public class BOJ3613 {
         char [] chars = string.toCharArray();
 
         //첫 글자가 _거나 끝 글자가 _거나 대문자로 시작하는 경우는 Error
-        if(chars[0] == '_' && chars[chars.length-1] == '_' && ('A' <= chars[0] || chars[0] <= 'Z')){
+        if(chars[0] == '_' || chars[chars.length-1] == '_' || ('A' <= chars[0] && chars[0] <= 'Z')){
             System.out.println("Error!");
             return;
         }
@@ -17,7 +17,7 @@ public class BOJ3613 {
         boolean isJava = true;//자바 변수인지
         boolean isCpp = true;//C++ 변수인지
 
-        for(int i=1;i<=chars.length;i++){
+        for(int i=0;i < chars.length;i++){
             if(chars[i] == '_'){
                 //연속으로 '_'가 두번 쓰인 경우 Error
                 if(i>1 && chars[i-1] == '_'){
@@ -58,10 +58,10 @@ public class BOJ3613 {
             }
         }
         else if(isCpp){
-            for(int i=1;i<=chars.length;i++){
+            for(int i=0;i<chars.length;i++){
                 //'_'를 빼고 대문자를 넣는다.
                 if(chars[i] == '_' && i < chars.length - 1)
-                    sb.append(chars[++i] - 32);
+                    sb.append((char)(chars[++i] - 32));
                 else
                     sb.append(chars[i]);
             }
