@@ -1,5 +1,6 @@
 import java.util.*;
 
+//프로그래머스 코딩테스트 연습 <해쉬> - '완주하지 못한 선수' 문제
 public class Programmers42576 {
     //Hash를 안썼을 때 2중 for문으로 짠 함수
     //O(n*n)으로 시간 초과
