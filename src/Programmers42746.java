@@ -18,8 +18,6 @@ public class Programmers42746 {
         Arrays.sort(arr, new Comparator<String>() {
             @Override
             public int compare(String s1, String s2) {
-                System.out.println("s2+s1 " + s2+s1 + " s1+s2 " + s1+s2);
-                System.out.println("compareTo " + (s2+s1).compareTo(s1+s2));
                 return (s2+s1).compareTo(s1+s2);
             }
         });
@@ -32,10 +30,5 @@ public class Programmers42746 {
             answer+=arr[i];
         }
         return answer;
-    }
-
-    public static void main(String[] args) {
-        int [] numbers = {6,10,2};
-        System.out.println("solution " + solution(numbers));
     }
 }
