@@ -8,7 +8,9 @@ public class BOJ3048 {
     static char [] first;
     static char [] second;
     static ArrayList<Point> list = new ArrayList<>();
-    static StringBuffer sb = new StringBuffer();
+    static StringBuilder sb = new StringBuilder();
+    //StringBuilder가 StringBuffer보다 성능이 좋다. Synchronized를 사용해야하는 멀티쓰레드 프로그램이면 StringBuffer 객체 사용.
+    //static StringBuffer sb = new StringBuffer();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
