@@ -30,7 +30,7 @@ public class BOJ3048 {
         int T = Integer.parseInt(br.readLine());
 
         // 시뮬레이션 이전에 시간 초가 T보다 높으면 계산을 미리 끝내고 return
-        if(N2 + N1 -1 <= T) {
+        if(N1 + N2 - 1 <= T) {
             for (int i = 0; i < second.length; i++) {
                 sb.append(second[i]);
             }
@@ -39,7 +39,7 @@ public class BOJ3048 {
                 sb.append(first[i]);
             }
             System.out.println(sb.toString());
-            return ;
+            return;
         }
 
         while(T-- >0) {
