@@ -17,7 +17,7 @@ public class Programmers42840 {
             if(answers[i] == choice_3[i%10])
                 answer_count[2]++;
         }
-        //정답 개수 중 최대값 뽑기
+        //정답 개수 중 최대값 뽑기42
         int max = Integer.MIN_VALUE;
         for(int i=0;i<answer_count.length;i++)
             max = Math.max(max,answer_count[i]);
