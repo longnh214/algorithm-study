@@ -10,10 +10,10 @@ public class Programmers42842 {
 
     public static int[] solution(int brown, int red) {
         int[] answer = new int[2];
+
         boolean [] visited = new boolean[red+1];
         int i;
         int j = 0;
-        
         for(i=red;i>=1;i--){
             if(red%i==0 && visited[i] == false){
                 j = red / i;
