@@ -15,8 +15,10 @@ public class BOJ6603_2 {
             K = Integer.parseInt(st.nextToken());
             arr = new int[K];
             visited = new boolean[K];
+
             for(int i=0;i<K;i++)
                 arr[i] = Integer.parseInt(st.nextToken());
+
             for(int i=0;i<=K-6;i++){
                 visited[i] = true;
                 dfs(i,1);
