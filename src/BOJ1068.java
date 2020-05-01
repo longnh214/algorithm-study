@@ -9,7 +9,7 @@ public class BOJ1068 {
         int n = Integer.parseInt(br.readLine());
 
         ArrayList<Integer>[] a = (ArrayList<Integer>[]) new ArrayList[n+1];
-        boolean[] c = new boolean[n];
+        boolean[] visited = new boolean[n];
         int[] parent = new int[n];
 
         for(int i=0;i<n;i++) {
@@ -45,33 +45,33 @@ public class BOJ1068 {
         // 한번 bfs를 통해 제거할 노드의 자식들 제거 (본인 포함)
         // 그 후 다시 bfs를 통해 리프노드 탐색
 
-        bfs(a,parent,c,remove);
-        System.out.println(bfs(a,parent,c,root));
+        bfs(a,parent,visited,remove);
+        System.out.println(bfs(a,parent,visited,root));
 
     }
 
-    public static int bfs(ArrayList<Integer>[] a, int[] parent, boolean[] c, int remove) {
+    public static int bfs(ArrayList<Integer>[] a, int[] parent, boolean[] visited, int remove) {
         Queue<Integer> q = new LinkedList<>();
         int cnt = 0;
 
-        if (c[remove]) {
+        if (visited[remove]) {
             return 0;
         }
 
         q.add(remove);
-        c[remove] = true;
+        visited[remove] = true;
 
         while(!q.isEmpty()) {
             remove = q.poll();
             boolean flag = false;
 
             for(int v : a[remove]) {
-                if (!c[v] && parent[remove] != v) {
+                if (!visited[v] && parent[remove] != v) {
                     // 방문하지 않았고, 부모정점과 현재 정점이 같지 않다면 탐색
                     // 방문했거나, 부모정점과 같다면 탐색할 필요가 없다
                     flag = true;
                     q.add(v);
-                    c[v] = true;
+                    visited[v] = true;
                 }
 
             }
