@@ -40,10 +40,6 @@ public class BOJ2617 {
             Arrays.fill(visited, false);
             if(dfs(i, lighter) > mid)
                 answer++;
-            System.out.println(dfs(i, heavier));
-            Arrays.fill(visited, false);
-            System.out.println(dfs(i, lighter));
-            System.out.println("----------");
         }
 
         System.out.println(answer);
