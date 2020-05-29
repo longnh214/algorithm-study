@@ -14,7 +14,7 @@ public class Programmers42628 {
         PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder());
         PriorityQueue<Integer> minPQ = new PriorityQueue<>();
 
-        //각 operation에 따라 삽입 삭제 연산 조건문에 따라 다르게 처리.
+        //각 operation에 따라 삽입 삭제 연산 조건문에 따라 다르게 처리한다.
         for(int i=0;i<operations.length;i++){
             String [] commandList = operations[i].split(" ");
 
