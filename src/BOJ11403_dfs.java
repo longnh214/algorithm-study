@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 //백준 11403번 <DFS/BFS> - '경로 찾기'
-public class BOJ11403 {
+public class BOJ11403_dfs {
     static int [] visited;
     static int [][] map;
     static int N;
