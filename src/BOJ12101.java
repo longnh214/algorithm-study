@@ -1,7 +1,5 @@
-package com.ssafy;
-//백준 12101번 <?> - '1,2,3 더하기 2'
 import java.util.*;
-
+//백준 12101번 <?> - '1,2,3 더하기 2'
 public class BOJ12101 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
