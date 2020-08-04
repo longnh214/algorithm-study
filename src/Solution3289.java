@@ -2,8 +2,8 @@
  * @author choi
  * @date Aug 4, 2020
  * @see https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWBJKA6qr2oDFAWr
- * @mem
- * @time
+ * @mem 125,324 kb
+ * @time 981 ms
  * @caution
  * [고려사항] 배열로 서로소 집합을 하려했으나 시간 초과로 인해 틀린 것 같다.
  * [입력사항]
