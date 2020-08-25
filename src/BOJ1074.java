@@ -2,7 +2,7 @@
  * @author choi
  * @date Aug 25, 2020
  * @see https://www.acmicpc.net/problem/1074
- * @mem 13516kb
+ * @mem 13,516kb
  * @time 3668ms
  * @caution
  * [고려사항] 배열로 선언하면 배열의 인덱스가 2^15 * 2^15가 될 수 있으므로 메모리 초과가 날 수 밖에 없다.
