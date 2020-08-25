@@ -2,7 +2,7 @@
  * @author choi
  * @date Aug 25, 2020
  * @see https://www.acmicpc.net/problem/1992
- * @mem 14296kb
+ * @mem 14,296kb
  * @time 140ms
  * @caution
  * [고려사항] 괄호를 언제 넣어야 하는 지 헷갈렸던 문제이다. z와 비슷했던 문제였다.
