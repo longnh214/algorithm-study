@@ -2,7 +2,7 @@
  * @author choi
  * @date Aug 25, 2020
  * @see https://www.acmicpc.net/problem/15686
- * @mem 16596kb
+ * @mem 16,596kb
  * @time 196ms
  * @caution
  * [고려사항] 재귀적 조합을 이용하면 풀 수 있는 문제였다.
