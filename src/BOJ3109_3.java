@@ -2,8 +2,8 @@
  * @author choi
  * @date Aug 27, 2020
  * @see https://www.acmicpc.net/problem/3109
- * @mem 53,268kb
- * @time 336ms
+ * @mem
+ * @time
  * @caution
  * [고려사항]
  * 	flag를 static으로 선언하여 정답에 도달했을 경우에는 해당 dfs를 return 시켜주고
