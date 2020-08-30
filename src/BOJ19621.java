@@ -2,8 +2,8 @@
  * @author choi
  * @date Aug 31, 2020
  * @see https://www.acmicpc.net/problem/19621
- * @mem 18,356kb
- * @time 192ms
+ * @mem 13,332kb
+ * @time 80ms
  * @caution
  * [고려사항]
  * 그리디하게 풀려고 했는데, 문제에서 K-1과 회의 K+1만 회의 K와 겹친다고 했으므로
