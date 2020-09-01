@@ -2,10 +2,11 @@
  * @author choi
  * @date Sep 1, 2020
  * @see https://www.acmicpc.net/problem/1197
- * @mem 48,212kb
- * @time 460ms
+ * @mem 47,956kb
+ * @time 432ms
  * @caution
  * [고려사항]
+ * 선택한 간선이 V-1개면 끝내야 한다는 것을 넣지 않았었다.
  * [입력사항]
  * [출력사항]
  */
@@ -33,13 +34,15 @@ public class BOJ1197_Kruskal {
         }
 
         init();
+        int count = 0;
         while(!pq.isEmpty()) {
             Edge temp = pq.poll();
 
-
             if(union(temp.start, temp.end)) {
                 answer+=temp.cost;
+                count++;
             }
+            if(count == V-1) break;
         }
         System.out.println(answer);
     }
