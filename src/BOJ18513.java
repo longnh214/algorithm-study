@@ -1,13 +1,11 @@
 /**
  * @author choi
- * @date Sep 1, 2020
+ * @date Dec 15, 2020
  * @see https://www.acmicpc.net/problem/18513
- * @mem 61,220kb
- * @time 592ms
+ * @mem 60,076kb
+ * @time 576ms
  * @caution
  * [고려사항]
- * 집을 지어야 하는 위치의 인덱스도 범위를 -100000000부터 100000000까지 줘야할 줄 알았는데 결과값이 어떻든 정답으로 처리되어서
- * 이해가 안됐었던 문제다.
  * answer도 long 형으로 선언했어서 이론 상 다 맞았다고 생각했는데, 역시 BFS는 Queue를 이용해야 시간이 절약되는 느낌이다.
  * 그리고 visited는 역시 List가 아닌 Set으로 처리 했어야 했다. List와 Set의 시간 차이를 보니 Set이 훨씬 빨랐다.
  * [입력사항]
@@ -39,10 +37,7 @@ public class BOJ18513{
         }
 
         count = K;
-
-
         bfs();
-
         System.out.println(answer);
     }
 
@@ -62,7 +57,7 @@ public class BOJ18513{
                 for(int i=0;i<2;i++) {
                     int nx = temp + dx[i];
 
-                    if(isIn(nx) && !homeSet.contains(nx)) {
+                    if(!homeSet.contains(nx)) {
                         --count;
                         answer+=depth;
                         homeSet.add(nx);
@@ -77,8 +72,5 @@ public class BOJ18513{
             }
             depth++;
         }
-    }
-    public static boolean isIn(int x) {
-        return x>=-100000000 && x<=100000000;
     }
 }
