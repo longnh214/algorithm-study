@@ -17,14 +17,14 @@ public class BOJ2877 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int K = Integer.parseInt(br.readLine());
-		K++;
+		K++; // 맨 앞을 1로 무조건 채우기 위한 방법.
 		
 		Stack<Integer> stack = new Stack<>();
 		while(K != 0) {
 			stack.push(K % 2);
 			K /= 2;
 		}
-		stack.pop();
+		stack.pop(); //임의로 채웠던 맨 앞 1을 제거한다.
 		StringBuilder sb = new StringBuilder();
 		while(!stack.isEmpty()) {
 			int value = stack.pop();
