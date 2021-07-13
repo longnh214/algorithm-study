@@ -1,14 +1,16 @@
 /**
  * @author choi
- * @date Sep 6, 2020
+ * @date Jul 13, 2021
  * @see https://www.acmicpc.net/problem/1916
- * @mem 47,252kb
- * @time 376ms
+ * @mem 50,228kb
+ * @time 432ms
  * @caution
  * [고려사항]
  * 다익스트라 알고리즘을 이용해서 문제를 풀었다.
  * distance 배열에 계속 최소 비용을 갱신하였다.
- * (PriorityQueue 이용) 
+ * (PriorityQueue 이용)
+ * 
+ * visited 배열을 사용하면 안되고, endNum에 도달하면 바로 끝내면 된다.(시간초과 해결)
  * [입력사항]
  * [출력사항]
  */
@@ -57,16 +59,16 @@ public class BOJ1916 {
     static void dijkstra(int start) {
         PriorityQueue<Bus> pq = new PriorityQueue<>();
 
-        boolean [] visited = new boolean[N+1];
-
         pq.offer(new Bus(start,0));
         distance[start] = 0;
 
         while(!pq.isEmpty()) {
             Bus temp = pq.poll();
             int cur = temp.end;
-            if(!visited[cur])
-                visited[cur] = true;
+            
+            if(cur == endNum) {
+            	break;
+            }
 
             for(Bus bus : busList[cur]) {
                 if(distance[bus.end] > distance[cur] + bus.cost) {
@@ -74,7 +76,6 @@ public class BOJ1916 {
                     pq.offer(new Bus(bus.end, distance[bus.end]));
                 }
             }
-
         }
     }
 
