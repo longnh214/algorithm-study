@@ -1,15 +1,17 @@
 /**
  * @author choi
- * @date Jun 27, 2021
+ * @date Jul 14, 2021
  * @see https://www.acmicpc.net/problem/11779
- * @mem 46,324kb
- * @time 408ms
+ * @mem 50,568kb
+ * @time 412ms
  * @caution
  * [고려사항]
  * 지나가는 경로마다 문자열에 +를 해주어 계속 String 배열을 갱신하는 방법으로는 계속 틀렸고,
  * 스택과 부모의 인덱스를 저장하는 int 배열을 이용했더니 맞출 수 있었다.
  * 문자열로도 test case의 정답을 도출해냈는데 왜 틀렸는 지 모르겠는 문제이다.. 맞왜틀.
  * 다익스트라 pq 처리 과정에서 부등호 때문에 틀렸었다.
+ * 
+ * visited 배열을 지우고, endNum에 도달했을 때에 while 문을 탈출하면 시간 초과가 해결된다.
  * [입력사항]
  * [출력사항]
  */
@@ -69,17 +71,15 @@ public class BOJ11779 {
 	static void dijkstra(int start) {
 		PriorityQueue<Bus> pq = new PriorityQueue<>();
 		
-		boolean [] visited = new boolean[N+1];
-		
 		pq.offer(new Bus(start,0));
 		distance[start] = 0;
 		
 		while(!pq.isEmpty()) {
 			Bus temp = pq.poll();
 			int cur = temp.end;
-			if(!visited[cur])
-				visited[cur] = true;
 			
+			if(cur == endNum)
+				break;
 			
 			for(Bus bus : busList[cur]) {
 				if(distance[bus.end] > distance[cur] + bus.cost) {
