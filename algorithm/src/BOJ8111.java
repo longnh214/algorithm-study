@@ -30,7 +30,7 @@ public class BOJ8111 {
 		while(T-->0) {
 			N = Integer.parseInt(br.readLine());
 			
-			if(N == 1 ) {
+			if(N == 1) {
 				System.out.println(1);
 				continue;
 			}
