@@ -11,7 +11,7 @@
  * [출력사항]
  */
 import java.io.*;
-//백준 <정규 표현식>'잠수함식별'
+//백준 <정규 표현식> '잠수함식별'
 public class BOJ2671 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
