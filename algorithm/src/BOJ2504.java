@@ -1,20 +1,18 @@
 /**
- * @author choi
- * @date 2020. 7. 31
+ * @author nakhoon
+ * @date Oct 2, 2021
  * @see https://www.acmicpc.net/problem/2504
- * @mem 12,968kb
+ * @mem 11,488kb
  * @time 80ms
  * @caution
- * [고려사항] 스택에서 뺄 때 더하기 처리를 어떻게 해야하나 생각했는데 temp 변수를
- *       이용하여 문제를 풀면 해결할 수 있었다.
- *       마지막에 값을 출력할 때 스택에 값이 있는 지 없는 지 확인을 해서
- *       스택에 값이 남아있다면 괄호가 안 맞는 것이므로 0을 넣어야 한다.
+ * [고려사항]
+ *  엣지케이스 ']()'에 대한 값 수정 잘못된 값(2) -> 맞는 값(0)
  * [입력사항]
  * [출력사항]
  */
-import java.io.*;
 import java.util.*;
-//백준 2504번 <스택> - '괄호의 값'
+import java.io.*;
+//백준 <스택> '괄호의 값'
 public class BOJ2504 {
     static Stack<Character> char_st = new Stack<>();
     public static void main(String[] args) throws IOException{
@@ -23,7 +21,7 @@ public class BOJ2504 {
         String str = br.readLine();
         int temp = 1;
         int answer = 0;
-        for(int i=0;i<str.length();i++) {
+        outer: for(int i=0;i<str.length();i++) {
             switch(str.charAt(i)) {
                 case '(':
                     //스택에 넣으면
@@ -36,10 +34,9 @@ public class BOJ2504 {
                     break;
                 case ')':
                     if(char_st.isEmpty() ||char_st.peek() != '(') {
-                        answer = 0;
-                        break;
+                       answer = 0;
+                       break outer;
                     }
-                    //자신의 짝 괄호가 바로 직전 인덱스에 있다면 answer+=temp를 한다.
                     if(str.charAt(i-1) == '(') answer += temp;
                     char_st.pop();
                     temp /= 2;
@@ -47,7 +44,7 @@ public class BOJ2504 {
                 case ']':
                     if(char_st.isEmpty() || char_st.peek() != '[') {
                         answer = 0;
-                        break;
+                        break outer;
                     }
                     if(str.charAt(i-1) == '[') answer += temp;
                     char_st.pop();
