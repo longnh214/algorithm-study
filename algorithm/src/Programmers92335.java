@@ -16,7 +16,6 @@ public class Programmers92335 {
 	}
 
 	public static int solution(int n, int k) {
-
 		int temp = n;
         Stack<Integer> stack = new Stack<>();
         while (temp != 0) {
