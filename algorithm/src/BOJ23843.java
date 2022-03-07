@@ -13,7 +13,6 @@
  * [입력사항]
  * [출력사항]
  */
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -21,7 +20,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
-
 //백준 <우선순위 큐> '콘센트'
 public class BOJ23843 {
     public static void main(String[] args) throws IOException{
