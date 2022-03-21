@@ -1,6 +1,6 @@
 /**
  * @author nakhoon
- * @date 2022, 3월 21일
+ * @date 2022, 3월 20일
  * @see https://www.acmicpc.net/problem/10826
  * @mem 18,144kb
  * @time 128ms
