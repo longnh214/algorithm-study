@@ -2,10 +2,11 @@
  * @author nakhoon
  * @date 2022, 3월 30일
  * @see https://www.acmicpc.net/problem/2164
- * @mem
- * @time
+ * @mem 51,060kb
+ * @time 148ms
  * @caution
  * [고려사항]
+ * 큐를 이용해서 문제를 해결할 수 있었다.
  * [입력사항]
  * [출력사항]
  */
