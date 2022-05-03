@@ -1,6 +1,6 @@
 /**
  * @author nakhoon
- * @date 2022, 5월 2일
+ * @date 2022, 5월 3일
  * @see https://www.acmicpc.net/problem/2693
  * @mem 12,984kb
  * @time 120ms
@@ -20,7 +20,6 @@ import java.util.*;
 public class BOJ2693 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        List<Integer> list = new ArrayList<>();
         int N = Integer.parseInt(br.readLine());
         Integer [] arr = new Integer[10];
         StringBuilder sb = new StringBuilder();
