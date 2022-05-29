@@ -10,7 +10,8 @@
  * [입력사항]
  * [출력사항]
  */
-
+import java.util.*;
+import java.io.*;
 //백준 <정렬> '주몽'
 public class BOJ1940 {
     public static void main(String[] args) throws IOException{
