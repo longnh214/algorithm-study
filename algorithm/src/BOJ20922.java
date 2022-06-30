@@ -3,7 +3,7 @@
  * @date 2022/06/30
  * @see https://www.acmicpc.net/problem/20922
  * @mem 37,424kb
- * @time 280ms =
+ * @time 280ms
  * @caution
  * [고려사항]
  * 투 포인터를 이용해서 문제를 해결할 수 있었다. 두 인덱스가 같을 경우에 더 진행하지 않고 끝나는 경우가 엣지 케이스로 존재했다.
