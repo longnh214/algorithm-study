@@ -2,10 +2,11 @@
  * @author nakhoon
  * @date 2022, 9월 17일
  * @see https://www.acmicpc.net/problem/2553
- * @mem
- * @time
+ * @mem 11,612kb
+ * @time 80ms
  * @caution
  * [고려사항]
+ * https://steady-coding.tistory.com/322 를 참고해서 DP 형식으로 문제를 해결했다.
  * [입력사항]
  * [출력사항]
  */
@@ -16,7 +17,7 @@ public class BOJ2553 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
 
-        int [] dp = new int[N+1];
+        int [] dp = new int[20001];
 
         int temp;
 
