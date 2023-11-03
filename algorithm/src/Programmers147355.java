@@ -9,9 +9,8 @@
  * [입력사항]
  * [출력사항]
  */
-import java.util.*;
-import java.io.*;
 
+//프로그래머스 <연습문제> - 크기가 작은 부분 문자열
 public class Programmers147355 {
     public static void main(String[] args) {
         String t = "3141592";
