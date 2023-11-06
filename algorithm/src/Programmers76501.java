@@ -5,12 +5,10 @@
  * @mem
  * @time
  * @caution
- * [고려사항]
+ * [고려사항] absolutes 배열을 순회하면서 현재 수의 음수/양수를 곱해서 더한 값을 answer로 반환하면 되는 문제이다.
  * [입력사항]
  * [출력사항]
  */
-import java.util.*;
-import java.io.*;
 
 //프로그래머스 <연습문제> '음양 더하기'
 public class Programmers76501 {
