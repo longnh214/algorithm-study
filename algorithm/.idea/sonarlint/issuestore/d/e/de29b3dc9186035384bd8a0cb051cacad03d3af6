@@ -1,0 +1,6 @@
+
+0
+java:S1220""Move this file to a named package.
+E	java:S106$"+Replace this use of System.out by a logger.(ìÐäðøÿÿÿÿ
+t
+java:S12101"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(½Ñ¢ðùÿÿÿÿ
