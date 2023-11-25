@@ -11,7 +11,7 @@
  * [출력사항]
  */
 
-//프로그래머스 <연습문제> '가운제 글자 가져오기'
+//프로그래머스 <연습문제> '가운데 글자 가져오기'
 public class Programmers12903 {
     public static void main(String[] args) {
         String s = "abcde";
