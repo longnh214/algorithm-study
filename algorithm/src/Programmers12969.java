@@ -11,6 +11,7 @@
  */
 import java.util.*;
 
+//프로그래머스 <연습문제> '직사각형 별찍기'
 public class Programmers12969 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
