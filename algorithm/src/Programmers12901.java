@@ -12,6 +12,7 @@
  * [출력사항]
  */
 
+//프로그래머스 <연습문제> '2016년'
 public class Programmers12901 {
     static final int [] DAYS_BY_MONTH = {31,29,31,30,31,30,31,31,30,31,30,31};
     static final String [] WEEKDAYS = {"FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU"};
