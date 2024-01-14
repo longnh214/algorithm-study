@@ -1,0 +1,16 @@
+
+0
+java:S1220""Move this file to a named package.
+c
+java:S2259S"HA "NullPointerException" could be thrown; "inTimeDate" is nullable here.(©ñºŠşÿÿÿÿ
+d
+java:S2259S"IA "NullPointerException" could be thrown; "outTimeDate" is nullable here.(©ñºŠşÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(üø“¡şÿÿÿÿ
+O
+java:S2864("4Iterate over the "entrySet" instead of the "keySet".(¨Œ°¡ıÿÿÿÿ
+O
+java:S2864."4Iterate over the "entrySet" instead of the "keySet".(Ì’Ñáúÿÿÿÿ
+M
+java:S1135H"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+M
+java:S1135O"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ

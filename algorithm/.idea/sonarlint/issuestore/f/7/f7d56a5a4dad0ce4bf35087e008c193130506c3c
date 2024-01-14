@@ -1,0 +1,12 @@
+
+7
+java:S1220""Move this file to a named package.8ˆ¦ıšÍ1
+G	java:S106"+Replace this use of System.out by a logger.(¾œÊî8·¦ıšÍ1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¹¦ıšÍ1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8¹¦ıšÍ1
+L
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8¹¦ıšÍ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¹¦ıšÍ1

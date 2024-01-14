@@ -1,0 +1,8 @@
+
+7
+java:S1220""Move this file to a named package.8Æ¤ŞñÀ1
+L	java:S106"+Replace this use of System.out by a logger.(Ì­ÌÇşÿÿÿÿ8Ï¤ŞñÀ1
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8ÖùŞñÀ1
+@
+java:S1128"$Remove this unused import 'java.io'.(¬›ãD8×ùŞñÀ1

@@ -1,0 +1,7 @@
+
+7
+java:S1220""Move this file to a named package.8ıà•¼Ì1
+r
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ8™á•¼Ì1
+G	java:S106"+Replace this use of System.out by a logger.(ä¯ç‹8á•¼Ì1
+X	java:S125"<This block of commented-out lines of code should be removed.(¤¤¨Í8Šõ°¼Ì1

@@ -1,0 +1,6 @@
+
+7
+java:S1220""Move this file to a named package.8Âïµ˜Ã1
+F	java:S106"+Replace this use of System.out by a logger.(Ÿéç8±ðµ˜Ã1
+L
+java:S3631"/Use "Arrays.stream" instead of "Arrays.asList".(û‰ªè8¸ðµ˜Ã1

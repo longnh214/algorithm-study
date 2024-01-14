@@ -1,0 +1,6 @@
+
+7
+java:S1220""Move this file to a named package.8ĞÑ„íÊ1
+G	java:S106"+Replace this use of System.out by a logger.(ä¯ç‹8éÑ„íÊ1
+`
+java:S1612">Replace this lambda with method reference 'Integer::parseInt'.(Ğ‹è¥ıÿÿÿÿ8ı†íÊ1
