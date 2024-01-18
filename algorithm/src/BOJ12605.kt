@@ -14,6 +14,7 @@
 import java.util.*;
 import java.io.*;
 
+//백준 <문자열> '단어순서 뒤집기'
 fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in`))) {
     val size = Integer.parseInt(readLine())
 
