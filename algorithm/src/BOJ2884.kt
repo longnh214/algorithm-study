@@ -26,5 +26,5 @@ fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in
         hour = (hour + 23) % 24
     }
 
-    println(hour.toString() + " " + minute.toString())
+    println("$hour $minute")
 }
