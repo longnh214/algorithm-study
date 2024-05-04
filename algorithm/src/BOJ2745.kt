@@ -6,7 +6,7 @@
  * @time 96ms
  * @caution
  * [고려사항]
- * String.toInt(redix) 형식의 출력을 통해 진법 변환을 하였다.
+ * String.toInt(numeralSystem) 형식의 출력을 통해 진법 변환을 하였다.
  * [입력사항]
  * [출력사항]
  */
@@ -17,7 +17,7 @@ import java.io.*;
 fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in`))) {
     val st = StringTokenizer(readLine())
     val str = st.nextToken()
-    val redix = st.nextToken().toInt()
+    val numeralSystem = st.nextToken().toInt()
 
-    println(str.toInt(redix))
+    println(str.toInt(numeralSystem))
 }
