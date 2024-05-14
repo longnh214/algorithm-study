@@ -1,13 +1,19 @@
 /**
- * @author choi
- * @date Sep 5, 2020
+ * @author nakhoonchoi
+ * @date May 14, 2024
  * @see https://www.acmicpc.net/problem/1647
- * @mem 307,024kb
- * @time 1296ms
+ * @mem 324,388kb
+ * @time 1,160ms
  * @caution
  * [고려사항]
  * MST를 전부 합치는 것이 아니라 두개까지만 만들면 되므로 count를 N-2까지만 만들고
  * break를 하면 되는 문제.
+ *
+ * 2024-05-14
+ * count를 N-2까지 만드는데, break; 조건문을 answer에 가중치를 더하기 전에
+ * break;를 해야하는 함정이 있었던 문제.
+ *
+ * 마을이 총 두 개일 경우에는 연결을 하지 않아도 됨을 생각해야했다.
  * [입력사항]
  * [출력사항]
  */
@@ -43,12 +49,13 @@ public class BOJ1647 {
         while(!pq.isEmpty()) {
             Road temp = pq.poll();
 
+            if(count == N-2)
+                break;
+
             if(union(temp.start,temp.end)) {
                 count++;
                 answer+=temp.cost;
             }
-            if(count == N-2)
-                break;
         }
 
         System.out.println(answer);
@@ -78,9 +85,9 @@ public class BOJ1647 {
             if(rank[xRoot] == rank[yRoot])
                 rank[xRoot]++;
             if(rank[xRoot] > rank[yRoot]) {
-                parent[yRoot] = parent[xRoot];
+                parent[yRoot] = xRoot;
             }else {
-                parent[xRoot] = parent[yRoot];
+                parent[xRoot] = yRoot;
             }
             return true;
         }
