@@ -15,9 +15,9 @@ import java.io.*;
 
 //백준 <DFS> '헌내기는 친구가 필요해'
 
-var cnt = 0
-val dx = intArrayOf(-1, 1, 0, 0)
-val dy = intArrayOf(0, 0, -1, 1)
+var cnt21736 = 0
+val dx21736 = intArrayOf(-1, 1, 0, 0)
+val dy21736 = intArrayOf(0, 0, -1, 1)
 fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in`))) {
     val st = StringTokenizer(readLine())
     val n = st.nextToken().toInt()
@@ -37,17 +37,17 @@ fun main(args: Array<String>) = with(BufferedReader(InputStreamReader(System.`in
 
     dfs21738(startX, startY, arr, visited, n, m)
 
-    println(if(cnt == 0) "TT" else cnt)
+    println(if(cnt21736 == 0) "TT" else cnt21736)
 }
 
 fun dfs21738(x: Int, y: Int, arr: Array<CharArray>, visited: Array<BooleanArray>, n: Int, m: Int){
     if(arr[x][y] == 'X') return
-    if(arr[x][y] == 'P') cnt++
+    if(arr[x][y] == 'P') cnt21736++
 
     for(i in 0 until 4){
-        if(isIn21738(x + dx[i],y + dy[i],n,m) && !visited[x + dx[i]][y + dy[i]]){
-            visited[x + dx[i]][y + dy[i]] = true
-            dfs21738(x + dx[i], y + dy[i], arr, visited, n, m)
+        if(isIn21738(x + dx21736[i],y + dy21736[i],n,m) && !visited[x + dx21736[i]][y + dy21736[i]]){
+            visited[x + dx21736[i]][y + dy21736[i]] = true
+            dfs21738(x + dx21736[i], y + dy21736[i], arr, visited, n, m)
         }
     }
 }
