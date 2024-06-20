@@ -31,8 +31,6 @@ public class BOJ16960 {
 
             lamps[i] = new ArrayList<>();
 
-            StringBuilder sb = new StringBuilder();
-
             for(int j=0;j<k;j++){
                 int lampNum = Integer.parseInt(st.nextToken());
 
