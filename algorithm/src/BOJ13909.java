@@ -12,7 +12,6 @@
  * [출력사항]
  */
 import java.io.*;
-import java.util.*;
 //백준 <수학> '창문 닫기'
 
 public class BOJ13909 {
