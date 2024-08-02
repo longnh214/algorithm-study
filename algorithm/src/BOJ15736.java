@@ -2,8 +2,8 @@
  * @author nakhoonchoi
  * @date 2024/08/01
  * @see https://www.acmicpc.net/problem/15736
- * @mem
- * @time
+ * @mem 11,484kb
+ * @time 76ms
  * @caution
  * [고려사항]
  * 제곱근의 정수값 만큼은 홀수만큼 깃발이 바뀔 것이므로
