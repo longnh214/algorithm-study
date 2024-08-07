@@ -16,7 +16,7 @@
 import java.util.*;
 //프로그래머스 <레벨2> '숫자 블록'
 
-public class Solution12923 {
+public class Programmers12923 {
     public static void main(String[] args) {
         long begin = 1;
         long end = 10;
