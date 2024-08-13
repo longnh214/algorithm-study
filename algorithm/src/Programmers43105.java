@@ -8,8 +8,6 @@
  * [입력사항]
  * [출력사항]
  */
-import java.io.*;
-import java.util.*;
 //프로그래머스 <DP> '정수 삼각형'
 
 public class Programmers43105 {
