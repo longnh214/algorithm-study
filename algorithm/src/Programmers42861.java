@@ -66,7 +66,7 @@ public class Programmers42861 {
 
     public static int find(int x){
         if(parent[x] == x) return x;
-        return find(parent[x]);
+        return parent[x] = find(parent[x]);
     }
 
     static class Bridge implements Comparable<Bridge>{
