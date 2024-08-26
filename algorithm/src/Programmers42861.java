@@ -24,15 +24,19 @@ public class Programmers42861 {
     }
 
     public static int solution(int n, int[][] costs) {
+        init(n);
+
+        return kruskal(n, costs);
+    }
+
+    public static void init(int n){
         parent = new int[n];
         for(int i=0;i< parent.length;i++){
             parent[i] = i;
         }
-
-        return kruskal(costs, n);
     }
 
-    public static int kruskal(int [][] costs, int n){
+    public static int kruskal(int n, int [][] costs){
         int cost = 0;
         PriorityQueue<Bridge> pq = new PriorityQueue<>();
 
