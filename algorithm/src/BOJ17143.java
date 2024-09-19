@@ -74,7 +74,7 @@ public class BOJ17143 {
 
                 int nr = shark[j].r;
                 int nc = shark[j].c;
-                for(int k=0;k<(shark[j].d == 1 || shark[j].d == 2 ?  shark[j].s % (2*(R-1))  : shark[j].s % (2*(C-1)));k++) {
+                for(int k=0;k<(shark[j].d == 1 || shark[j].d == 2 ? shark[j].s % (2*(R-1)) : shark[j].s % (2*(C-1)));k++) {
                     nr += dx[shark[j].d];
                     nc += dy[shark[j].d];
 
