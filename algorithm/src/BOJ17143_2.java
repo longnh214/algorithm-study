@@ -83,7 +83,7 @@ public class BOJ17143_2 {
 
                 int nr = sharks[j].r;
                 int nc = sharks[j].c;
-                for(int k=0;k<(sharks[j].dir == 1 || sharks[j].dir == 2 ?  sharks[j].speed % (2*(R-1)) : sharks[j].speed % (2*(C-1)));k++){
+                for(int k=0;k<(sharks[j].dir == 1 || sharks[j].dir == 2 ? sharks[j].speed % (2*(R-1)) : sharks[j].speed % (2*(C-1)));k++){
                     nr += dx[sharks[j].dir];
                     nc += dy[sharks[j].dir];
 
