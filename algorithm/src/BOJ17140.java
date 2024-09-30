@@ -6,7 +6,7 @@
  * @time 304ms
  * @caution
  * [고려사항]
- * 정렬하는 기준을 위해 외부에 count를 계산하는 CountMap을 선언하였고,
+ * 정렬하는 기준을 위해 외부에 count를 계산하는 countMap을 선언하였고,
  * treeMap을 새로 선언해서 countMap을 기준으로 key들을 정렬해서 값을 옮겨주었는데,
  * treeMap이 아니라 list를 이용해서 countMap의 key들을 정렬하고 키와 값을 순차적으로 배열에 입력시켜주었다.
  *
