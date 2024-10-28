@@ -1,6 +1,6 @@
 /**
- * @author choi
- * @date Oct 16, 2020
+ * @author nakhoonchoi
+ * @date 2024/10/28
  * @see https://www.acmicpc.net/problem/19237
  * @mem 16.072kb
  * @time 152ms
@@ -66,19 +66,13 @@ public class BOJ19237 {
             }
         }
 
-        //입력이 제대로 잘 되었는가.
-//		for(int i=1;i<=M;i++) {
-//			for(int j=1;j<=4;j++) {
-//				System.out.println(Arrays.toString(dir[i][j]));
-//			}
-//		}
         answer = 0;
         while(true) {
             for(int i=1;i<=M;i++) {
                 if(sharkInfo[i][0] == -1 && sharkInfo[i][1] == -1)
                     continue;
-                int nx = sharkInfo[i][0] + dx[sharkInfo[i][2]];
-                int ny = sharkInfo[i][1] + dy[sharkInfo[i][2]];
+                int nx;
+                int ny;
 
                 int direction = sharkInfo[i][2];
                 boolean flag = false;
