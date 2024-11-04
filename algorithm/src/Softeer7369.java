@@ -20,8 +20,6 @@ public class Softeer7369 {
     static int [][] map;
     static int [][] sum;
     static int [][] answer;
-    static int [] dx = {1, 0};
-    static int [] dy = {0, 1};
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
