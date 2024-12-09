@@ -14,6 +14,34 @@ import java.util.*;
 //LeetCode <LeetCode 75> 'Product of Array Except Self'
 
 public class LeetCode238 {
+    public int [] productExceptSelf2(int [] nums){
+        int [] answer = new int[nums.length];
+
+        int [] up = new int[nums.length];
+
+        int [] down = new int[nums.length];
+
+        up[0] = 1;
+        down[nums.length-1] = 1;
+
+        for(int i=1;i<nums.length;i++){
+            up[i] = up[i-1] * nums[i-1];
+        }
+
+        for(int i=nums.length-2;i>=0;i--){
+            down[i] = down[i+1] * nums[i+1];
+        }
+
+//        System.out.println(Arrays.toString(up));
+//        System.out.println(Arrays.toString(down));
+
+        for(int i=0;i<nums.length;i++){
+            answer[i] = up[i] * down[i];
+        }
+
+        return answer;
+    }
+
     public int[] productExceptSelf(int[] nums) {
         int [] answer = new int[nums.length];
 
