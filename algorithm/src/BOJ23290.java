@@ -2,8 +2,8 @@
  * @author nakhoonchoi
  * @date 2024/12/09
  * @see https://boj.ma/23290
- * @mem 366,828kb
- * @time 2,316ms
+ * @mem 366,488kb
+ * @time 2,608ms
  * @caution
  * [고려사항]
  * fishMemoryList에 이전 물고기의 이력을 저장하고,
