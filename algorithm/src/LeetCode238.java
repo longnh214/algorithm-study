@@ -32,9 +32,6 @@ public class LeetCode238 {
             down[i] = down[i+1] * nums[i+1];
         }
 
-//        System.out.println(Arrays.toString(up));
-//        System.out.println(Arrays.toString(down));
-
         for(int i=0;i<nums.length;i++){
             answer[i] = up[i] * down[i];
         }
