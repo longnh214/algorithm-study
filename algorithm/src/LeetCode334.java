@@ -10,11 +10,12 @@
  * O(N)으로 문제를 해결하려면, i < j < k에서,
  * i와 j를 최적의 값으로 메모이제이션 해놓고 j < k인 k 값을 찾았을 때
  * true를 반환하는 식으로 문제를 해결하면 되겠다 싶었다.
+ *
+ * else if(nums[i] <= a){ 에서
+ * 맨처음에 nums[i] < a로 했다가 {1,1,-2,6} 에서 AC를 받지 못해 WA를 받았었다.
  * [입력사항]
  * [출력사항]
  */
-import java.io.*;
-import java.util.*;
 //LeetCode <LeetCode 75> 'Increasing Triplet Subsequence'
 
 public class LeetCode334 {
