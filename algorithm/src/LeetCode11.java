@@ -11,7 +11,7 @@
  * [입력사항]
  * [출력사항]
  */
-//LeetCode <LeetCode> 'Container With Most Water'
+//LeetCode <LeetCode 75> 'Container With Most Water'
 
 public class LeetCode11 {
     public int maxArea(int[] height) {
