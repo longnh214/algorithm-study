@@ -23,12 +23,14 @@ public class LeetCode1679 {
         int right = nums.length-1;
         int count = 0;
 
+        Arrays.sort(nums);
+
         while(left < right){
             if(nums[left] + nums[right] == k){
                 count++;
                 left++;
                 right--;
-            }else if(nums[left] + nums[right] > k){
+            }else if(nums[left] + nums[right] < k){
                 left++;
             }else{
                 right--;
