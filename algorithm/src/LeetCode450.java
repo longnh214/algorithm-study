@@ -23,8 +23,6 @@
  * [입력사항]
  * [출력사항]
  */
-import java.io.*;
-import java.util.*;
 //LeetCode <LeetCode 75> 'Delete Node in a BST'
 
 public class LeetCode450 {
