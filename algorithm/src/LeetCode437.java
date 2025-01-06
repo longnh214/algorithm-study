@@ -46,7 +46,6 @@ public class LeetCode437 {
                 newList.add(sum + cur.val);
 
                 if(sum + cur.val == targetSum){
-                    System.out.println(cur.val);
                     count++;
                 }
             }
