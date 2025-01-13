@@ -24,12 +24,12 @@ public class LeetCode2300 {
 
         for(int i=0;i<spells.length;i++){
             int left = 0;
-            int right = potions.length;
+            int right = potions.length - 1;
 
-            while(left < right){
+            while(left <= right){
                 int mid = (left + right) / 2;
                 if((long) spells[i] * potions[mid] >= success){
-                    right = mid;
+                    right = mid - 1;
                 }else{
                     left = mid + 1;
                 }
