@@ -2,14 +2,6 @@
  * @author nakhoonchoi
  * @date 2025/01/20
  * @see https://school.programmers.co.kr/learn/courses/30/lessons/60059
- * @caution
- * [고려사항]
- * 테스트 케이스 1번, 23~27번, 29~33번이 계속 틀렸었다.
- *
- * 기존에는 lock 배열 자체에 자물쇠의 빈 공간과 열쇠의 돌기가 맞다면 CHECK(2)로 배열의 값을 갱신해주고
- *
- * [입력사항]
- * [출력사항]
  */
 import java.util.*;
 //프로그래머스 <2020 KAKAO BLIND RECRUITMENT> '자물쇠와 열쇠'
