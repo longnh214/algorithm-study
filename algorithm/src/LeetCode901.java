@@ -1,7 +1,7 @@
 /**
  * @author nakhoonchoi
  * @date 2025/01/17
- * @see https://www.acmicpc.net/problem/
+ * @see https://leetcode.com/problems/online-stock-span/description/?envType=study-plan-v2&envId=leetcode-75
  * @mem 55.6MB
  * @time 29ms
  * @caution
