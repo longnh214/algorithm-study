@@ -22,14 +22,7 @@ import java.util.*;
 //LeetCode <LeetCode> 'Minimum Number of Days to Make m Bouquets'
 
 public class LeetCode1482 {
-    public static void main(String[] args) {
-        int [] bloomDay = {7,7,7,7,12,7,7};
-        int m = 2;
-        int k = 3;
-
-        System.out.println(minDays(bloomDay, m, k));
-    }
-    public static int minDays(int[] bloomDay, int m, int k) {
+    public int minDays(int[] bloomDay, int m, int k) {
         int left = Arrays.stream(bloomDay).min().getAsInt();
         int right = Arrays.stream(bloomDay).max().getAsInt();
 
@@ -53,7 +46,7 @@ public class LeetCode1482 {
         return answer;
     }
 
-    private static boolean isCompleteBouquets(int[] bloomDay, int m, int k, int target) {
+    private boolean isCompleteBouquets(int[] bloomDay, int m, int k, int target) {
         int n = bloomDay.length;
         int count = 0;
 
@@ -70,7 +63,7 @@ public class LeetCode1482 {
         return false;
     }
 
-    private static boolean isBloomOk(int[] bloomDay, int index, int k, int target) {
+    private boolean isBloomOk(int[] bloomDay, int index, int k, int target) {
         for(int i=index;i<index+k;i++){
             if(bloomDay[i] > target){
                 return false;
