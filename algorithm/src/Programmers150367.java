@@ -106,7 +106,6 @@ public class Programmers150367 {
             int binaryLength = (int)(Math.pow(2, i) - 1);
 
             if(binaryLength >= length){
-                System.out.println(binaryLength);
                 return binaryLength;
             }
 
