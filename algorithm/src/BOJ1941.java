@@ -22,7 +22,7 @@
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
-//백준 <BFS> '소문난 칠공주'
+//백준 <조합> '소문난 칠공주'
 
 public class BOJ1941 {
     static int [] temp = new int[7];
