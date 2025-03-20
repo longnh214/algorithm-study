@@ -1,6 +1,6 @@
 /**
  * @author nakhoonchoi
- * @date 2025/03/191
+ * @date 2025/03/19
  * @see https://boj.ma/2461
  * @mem 157,540kb
  * @time 940ms
