@@ -109,17 +109,19 @@ public class BOJ17135_2 {
 
         while(!q.isEmpty()) {
             Status temp = q.poll();
+
             if(copyMap[temp.x][temp.y] == DEAD_ENEMY) {
                 return;
-            }
-            else if(copyMap[temp.x][temp.y] == ENEMY) {
+            }else if(copyMap[temp.x][temp.y] == ENEMY) {
                 copyMap[temp.x][temp.y] = DEAD_ENEMY;
                 kill++;
                 return;
             }
+
             if(temp.d == D) {
                 continue;
             }
+
             for(int i=0;i<3;i++) {
                 int nx = temp.x + dx[i];
                 int ny = temp.y + dy[i];
@@ -143,10 +145,6 @@ public class BOJ17135_2 {
 
     //2차원 배열을 복사하는 deepcopy 코드
     public static int [][] deepcopy(int [][] original){
-        if(original == null) {
-            return null;
-        }
-
         int [][] result = new int[original.length][original[0].length];
 
         for(int i=0;i<original.length;i++) {
