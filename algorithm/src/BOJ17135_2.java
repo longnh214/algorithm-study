@@ -66,7 +66,7 @@ public class BOJ17135_2 {
     //궁수 3명을 놓는 경우의 수 조합
     public static void comb(int cnt, int start) {
         if(cnt == 3) {
-            copyMap = deepcopy(game);
+            copyMap = deepCopy(game);
             doGame();
             return;
         }
@@ -144,7 +144,7 @@ public class BOJ17135_2 {
     }
 
     //2차원 배열을 복사하는 deepcopy 코드
-    public static int [][] deepcopy(int [][] original){
+    public static int [][] deepCopy(int [][] original){
         int [][] result = new int[original.length][original[0].length];
 
         for(int i=0;i<original.length;i++) {
