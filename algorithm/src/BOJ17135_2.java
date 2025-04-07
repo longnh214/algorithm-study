@@ -84,7 +84,7 @@ public class BOJ17135_2 {
         while(!isFinish()) {
             for(int i=0;i<M;i++) {
                 if(copyMap[N][i] == SHOOTER) {
-                    bfs(N, i, 0);
+                    kill(N, i, 0);
                 }
             }
             //적이 있으면 내려온다.
@@ -103,7 +103,7 @@ public class BOJ17135_2 {
     }
 
     //궁수가 범위 안에 있는 우선순위가 가장 높은 적을 찾는 bfs(왼쪽 우선)
-    public static void bfs(int x, int y, int d) {
+    public static void kill(int x, int y, int d) {
         Queue<Status> q = new LinkedList<>();
         q.offer(new Status(x, y, d));
 
