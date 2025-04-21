@@ -56,14 +56,14 @@ public class BOJ12920 {
             }
         }
 
-        int[][] dp = new int[products.size() + 1][M + 1];
+        int [][] dp = new int[products.size()+1][M+1];
 
         for(int i=1;i<products.size();i++){
             int weight = products.get(i)[0];
             int value = products.get(i)[1];
 
             for(int j=0;j<=M;j++){
-                if(j >= weight){
+                if(j>=weight){
                     dp[i][j] = Math.max(dp[i-1][j], dp[i-1][j-weight] + value);
                 }else{
                     dp[i][j] = dp[i-1][j];
