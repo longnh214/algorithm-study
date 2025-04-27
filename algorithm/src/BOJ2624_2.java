@@ -17,7 +17,7 @@ import java.io.*;
 import java.util.*;
 //백준 <DP> '동전 바꿔주기'
 
-public class BOJ2624 {
+public class BOJ2624_2 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
