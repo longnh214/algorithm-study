@@ -21,12 +21,7 @@
 //프로그래머스 <연습문제> '연속 펄스 부분 수열의 합'
 
 public class Programmers161988 {
-    public static void main(String[] args) {
-        int [] sequence = {2, 3, -6, 1, 3, -1, 2, 4};
-
-        System.out.println(solution(sequence));
-    }
-    public static long solution(int [] sequence) {
+    public long solution(int [] sequence) {
         long [][] dp = new long[sequence.length][2];
 
         dp[0][0] = sequence[0]; //1 -1 1 -1...
