@@ -29,12 +29,7 @@ import java.util.*;
 //프로그래머스 <탐욕법(Greedy)> '단속카메라'
 
 public class Programmers42884 {
-    public static void main(String[] args) {
-        int [][] routes = {{-20,15}, {-14,-5}, {-18,-13}, {-5,-3}};
-        System.out.println(solution(routes));
-    }
-
-    public static int solution(int[][] routes) {
+    public int solution(int[][] routes) {
         Arrays.sort(routes, (o1, o2) -> {
             if(o1[0] == o2[0]){
                 return Integer.compare(o1[1], o2[1]);
